@@ -293,6 +293,35 @@ h1 {
   font-weight: 800;
 }
 
+.contract-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.contract-item {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.contract-item span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.address {
+  color: var(--muted-strong);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
 .section {
   padding: 88px 0;
 }
@@ -505,16 +534,24 @@ textarea:disabled {
   font-weight: 900;
 }
 
-.contact-qq {
+.contact-line strong,
+.contact-line a {
+  color: var(--text);
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.contact-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 58px;
-  border: 1px solid rgba(240, 195, 90, 0.36);
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
   border-radius: 8px;
-  color: #071014;
-  background: linear-gradient(135deg, var(--brand), var(--brand-2));
-  font-size: 22px;
+  color: var(--muted-strong);
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 15px;
   font-weight: 900;
 }
 
